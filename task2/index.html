@@ -6,20 +6,72 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="tile-bg">
-      <h1 class="one">6</h1>
-    </div>
-    <div class="tile-two-bg">
-      <h1 class="two">5</h1>
-    </div>
-    <div class="tile">
-      <h1 class="one">5</h1>
-    </div>
-    <div class="tile-two">
-      <h1 class="two">6</h1>
+  <div class="wrapper" data-countdown data-countdown-start="91:00:02:15">
+
+    <div class="digit digit-0 low-second" data-position="top">
+      <div class="tile-bg">
+        <h1 class="one" data-level="next">1</h1>
+      </div>
+      <div class="tile-two-bg">
+        <h1 class="two" data-level="prew">0</h1>
+      </div>
+      <div class="tile before-half">
+        <h1 class="one" data-level="prew">0</h1>
+      </div>
+      <div class="tile-two after-half">
+        <h1 class="two" data-level="next">1</h1>
+      </div>
     </div>
 
+    <div class="digit digit-0 low-second-bg" data-position="bottom">
+      <div class="tile-bg">
+        <h1 class="one" data-level="next">2</h1>
+      </div>
+      <div class="tile-two-bg">
+        <h1 class="two" data-level="prew">1</h1>
+      </div>
+      <div  class="tile">
+        <h1 class="one" data-level="prew">1</h1>
+      </div>
+      <div  class="tile-two">
+        <h1 class="two" data-level="next">2</h1>
+      </div>
+    </div>
+
+    <div class="digit digit-1 high-second" data-position="top">
+      <div class="tile-bg">
+        <h1 class="one" data-level="next">5</h1>
+      </div>
+      <div class="tile-two-bg">
+        <h1 class="two" data-level="prew">4</h1>
+      </div>
+      <div class="tile before-half">
+        <h1 class="one" data-level="prew">4</h1>
+      </div>
+      <div class="tile-two after-half">
+        <h1 class="two" data-level="next">5</h1>
+      </div>
+    </div>
+
+    <div class="digit digit-1 high-second-bg" data-position="bottom">
+      <div class="tile-bg">
+        <h1 class="one" data-level="next">6</h1>
+      </div>
+      <div class="tile-two-bg">
+        <h1 class="two" data-level="prew">5</h1>
+      </div>
+      <div  class="tile ">
+        <h1 class="one " data-level="prew">5</h1>
+      </div>
+      <div  class="tile-two ">
+        <h1 class="two " data-level="next">6</h1>
+      </div>
+    </div>
+
+
+
   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

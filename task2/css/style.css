@@ -1,16 +1,60 @@
-div{
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper{
+  perspective: 1300px;
+  /*margin-left: 700px;*/
+  width: 650px;
+  height: 240px;
+  position: relative;
 
 }
 
-div.tile {
+.digit{
+  position: absolute;
+}
+
+.low-second, .low-second-bg, .high-second, .high-second-bg{
+  left: 550px;
+  z-index: 1;
+}
+
+.low-second-bg, .high-second-bg{
+  z-index: 0;
+}
+
+.digit-1{
+  left: 440px;
+}
+
+.digit-2{
+  left: 330px;
+}
+
+/*.digit:nth-child(4){
+  left: 220px;
+}
+
+.digit:nth-child(5){
+  left: 110px;
+}
+
+.digit:nth-child(6){
+  left: 0px;
+}*/
+
+.tile {
 
     width:100px;
     height:100px;
-    margin:120px;
+    /*// margin:120px;*/
     /* margin-left: 400px; */
-    background: green;
-    animation: example1 1s;
-    animation-fill-mode: forwards;
+    background: red;
+
     overflow: hidden;
     position: absolute;
 }
@@ -18,24 +62,23 @@ div.tile {
 .tile-bg{
     width:100px;
     height:100px;
-    margin:120px;
+    /*// margin:120px;*/
     /* margin-left: 400px; */
     background:red;
-    // animation: example1 1s;
-    // animation-fill-mode: forwards;
+    /*// animation: example1 1s;*/
+    /*// animation-fill-mode: forwards;*/
     overflow: hidden;
     position: absolute;
 }
 
-div.tile-two {
+.tile-two {
 
     width:100px;
     height:100px;
-    margin:120px;
+    /*// margin:120px;*/
     /* margin-left: 400px; */
     background:red;
-    animation: example2 1s;
-    animation-fill-mode: forwards;
+
     position: absolute;
     top: 100px;
     overflow: hidden;
@@ -44,43 +87,60 @@ div.tile-two {
 .tile-two-bg{
     width:100px;
     height:100px;
-    margin:120px;
+    /*// margin:120px;*/
     /* margin-left: 400px; */
-    background:green;
-    // animation: example2 1s;
-    // animation-fill-mode: forwards;
+    background:red;
+    /*// animation: example2 1s;*/
+    /*// animation-fill-mode: forwards;*/
     position: absolute;
     top: 100px;
     overflow: hidden;
 }
 
+.before-half{
+    animation: example1 1s;
+    animation-fill-mode: forwards;
+}
+
+.after-half{
+    animation: example2 1s;
+    animation-fill-mode: forwards;
+}
+
+
 @-webkit-keyframes example1 {
     0% {
        -webkit-transform: rotateX(0deg);
        -webkit-transform-origin: bottom;
+       display: block;
     }
     50% {
-       -webkit-transform: rotateX(-80.5deg);
+       -webkit-transform: rotateX(-90.9deg);
         -webkit-transform-origin: bottom;
+        visibility: hidden;
     }
     100% {
-       -webkit-transform: rotateX(-80.5deg);
+       -webkit-transform: rotateX(-90.9deg);
         -webkit-transform-origin: bottom;
+        visibility: hidden;
     }
 }
 
 @-webkit-keyframes example2 {
     0% {
-       -webkit-transform: rotateX(99.5deg);
+       -webkit-transform: rotateX(89.1deg);
        -webkit-transform-origin: top;
+       visibility: hidden;
     }
     50% {
-       -webkit-transform: rotateX(99.5deg);
+       -webkit-transform: rotateX(89.1deg);
         -webkit-transform-origin: top;
+        visibility: hidden;
     }
     100% {
        -webkit-transform: rotateX(0deg);
         -webkit-transform-origin: top;
+        display: block;
     }
 }
 
@@ -97,15 +157,11 @@ h1{
 
 .one{
     /* top: 50px; */
-    text-overflow: clip;
-    // top: -50px;
+    /*// text-overflow: clip;*/
+    /*// top: -50px;*/
 }
 
 .two{
-  // line-height: -250px;
+  /*// line-height: -250px;*/
      top: -100px;  
-}
-.wrapper{
-  perspective: 1300px;
-  margin-left: 700px;
 }
