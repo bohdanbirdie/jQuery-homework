@@ -35,6 +35,10 @@ body{
   left: 330px;
 }
 
+.digit-3{
+   left: 220px;
+}
+
 /*.digit:nth-child(4){
   left: 220px;
 }
