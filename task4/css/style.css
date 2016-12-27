@@ -1,0 +1,31 @@
+body{
+  background: #FF974F;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  border-radius: 50px;
+  background: #FFD393;
+}
+
+p{
+  color: #405952;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+p .trunc{
+  color: #8C9B97;
+}
+
+.shorten:hover{
+  background: #FFDBA8;
+  width: 100%;
+  padding: 1px;
+}
