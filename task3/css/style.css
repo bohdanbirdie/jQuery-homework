@@ -40,11 +40,11 @@ html {
 }
 
 body {
-  _width: 70%;
+  // width: 70%;
   color: #888;
   font: 14px/20px Helvetica, Arial, sans-serif;
   margin: 20px auto 0;
-  max-width: 800px;
+  max-width: 1400px;
   text-align: center;
   text-shadow: 0 -2px 1px #000;
   -webkit-font-smoothing: antialiased;
