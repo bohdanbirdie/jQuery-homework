@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Task 1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <form method="POST" onsubmit="return validate()" data-validate>
+    <input class="name" name="name" value="" placeholder="name" data-validate-required data-validate-minlength="5" data-validate-maxlength="30" />
+    <input class="email" name="email" placeholder="email" data-validate-required data-validate-email />
+    <input name="date" placeholder="date" data-validate-date />
+    <input name="ip" placeholder="ip" data-validate-regexp="^\d+\.\d+\.\d+\.\d+$" />
+    <input type="submit" value="Send" />
+  </form>
+  <h3>Name and email field's are required</h3>
+  <h4>Once you start writing some data in rest of the field's - they need to pass validation too.</h4>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

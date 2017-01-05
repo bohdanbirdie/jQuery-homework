@@ -1,0 +1,11 @@
+input{
+	background: #FFFFCC;
+}
+
+.error{
+	background: red;
+}
+
+.name, .email{
+	/*border: 2px solid black;*/
+}
