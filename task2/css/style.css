@@ -1,43 +1,54 @@
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: #1e1f23;
 }
 
-.wrapper{
+.wrapper {
   perspective: 1300px;
   /*margin-left: 700px;*/
   width: 650px;
   height: 240px;
   position: relative;
-
 }
 
-.digit{
+.digit {
   position: absolute;
+  width: 100px;
+  height: 200px;
+  border: 1px solid black;
 }
 
-.low-second, .low-second-bg, .high-second, .high-second-bg{
-  left: 550px;
+.low-second,
+.low-second-bg,
+.high-second,
+.high-second-bg {
   z-index: 1;
 }
 
-.low-second-bg, .high-second-bg{
+.low-second-bg,
+.high-second-bg {
   z-index: 0;
 }
 
-.digit-1{
-  left: 440px;
+.digit-0 {
+  left: 550px;
 }
 
-.digit-2{
+.digit-1 {
+  left: 450px;
+}
+
+.digit-2 {
   left: 330px;
 }
 
-.digit-3{
-   left: 220px;
+.digit-3 {
+  left: 230px;
 }
+
 
 /*.digit:nth-child(4){
   left: 220px;
@@ -52,114 +63,120 @@ body{
 }*/
 
 .tile {
-
-    width:100px;
-    height:100px;
-    background: green;
-    overflow: hidden;
-    position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  overflow: hidden;
+  position: absolute;
 }
 
-.tile-bg{
-    width:100px;
-    height:100px;
-    background:red;
-    overflow: hidden;
-    position: absolute;
+.tile-bg {
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  overflow: hidden;
+  position: absolute;
 }
 
 .tile-two {
-
-    width:100px;
-    height:100px;
-    background:red;
-    position: absolute;
-    top: 100px;
-    overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  position: absolute;
+  top: 100px;
+  overflow: hidden;
 }
 
-.tile-two-bg{
-    width:100px;
-    height:100px;
-    background:green;
-    position: absolute;
-    top: 100px;
-    overflow: hidden;
+.tile-two-bg {
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(238, 238, 238) 100%);
+  position: absolute;
+  top: 100px;
+  overflow: hidden;
 }
 
-.before-half{
-    animation: example1 1s;
-    animation-fill-mode: forwards;
+.before-half {
+  animation: example1 1s;
+  animation-fill-mode: forwards;
 }
 
-.after-half{
-    animation: example2 1s;
-    animation-fill-mode: forwards;
+.after-half {
+  animation: example2 1s;
+  animation-fill-mode: forwards;
 }
-
 
 @-webkit-keyframes example1 {
-    0% {
-       -webkit-transform: rotateX(0deg);
-       -webkit-transform-origin: bottom;
-       display: block;
-    }
-    50% {
-       -webkit-transform: rotateX(-90.9deg);
-        -webkit-transform-origin: bottom;
-        visibility: hidden;
-    }
-    100% {
-       -webkit-transform: rotateX(-90.9deg);
-        -webkit-transform-origin: bottom;
-        visibility: hidden;
-    }
+  0% {
+    -webkit-transform: rotateX(0deg);
+    -webkit-transform-origin: bottom;
+    display: block;
+  }
+  50% {
+    -webkit-transform: rotateX(-90.9deg);
+    -webkit-transform-origin: bottom;
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: rotateX(-90.9deg);
+    -webkit-transform-origin: bottom;
+    visibility: hidden;
+  }
 }
 
 @-webkit-keyframes example2 {
-    0% {
-       -webkit-transform: rotateX(89.1deg);
-       -webkit-transform-origin: top;
-       visibility: hidden;
-    }
-    50% {
-       -webkit-transform: rotateX(89.1deg);
-        -webkit-transform-origin: top;
-        visibility: hidden;
-    }
-    100% {
-       -webkit-transform: rotateX(0deg);
-        -webkit-transform-origin: top;
-        display: block;
-    }
+  0% {
+    -webkit-transform: rotateX(89.1deg);
+    -webkit-transform-origin: top;
+    visibility: hidden;
+  }
+  50% {
+    -webkit-transform: rotateX(89.1deg);
+    -webkit-transform-origin: top;
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    display: block;
+  }
 }
 
-h1{
+h1 {
   font-size: 200px;
   position: absolute;
   overflow: hidden;
-
   text-align: center;
   margin: 0;
-
-
 }
 
-.one{
-    /* top: 50px; */
-    /*// text-overflow: clip;*/
-    /*// top: -50px;*/
+.one {
+  /* top: 50px; */
+  /*// text-overflow: clip;*/
+  /*// top: -50px;*/
 }
 
-.two{
+.two {
   /*// line-height: -250px;*/
-     top: -100px;  
+  top: -100px;
 }
 
-.top-index{
+.top-index {
   z-index: 1;
 }
 
-.bottom-index{
+.bottom-index {
   z-index: 0;
 }
