@@ -18,5 +18,5 @@
 >Where *`letters`* is amount of letters that is maximum to call plugin function and *`sentences`* is amount of sentences that need to appear after plugin changes
 
 
-#### [Live demo ](https://bohdanbirdie.github.io/jQuery-homework/task2/index)
+#### [Live demo ](https://bohdanbirdie.github.io/jQuery-homework/task4/index)
 
