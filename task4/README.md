@@ -1,7 +1,7 @@
 #**jQuery truncate plugin**
 
 
-___
+
 
 
 ##How to use?
