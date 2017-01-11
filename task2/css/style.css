@@ -13,8 +13,7 @@ body {
   position: relative;
 }
 
-.labels{
-
+.labels {
   position: absolute;
   top: 220px;
   display: flex;
@@ -24,7 +23,7 @@ body {
   box-sizing: border-box;
 }
 
-.labels div{
+.labels div {
   flex-grow: 1;
   border: 1px black solid;
   width: 200px;
@@ -32,12 +31,12 @@ body {
   background: white;
 }
 
-.labels div:first-child{
+.labels div:first-child {
   margin-right: 10px;
   margin-left: 0px;
 }
 
-.labels div:last-child{
+.labels div:last-child {
   margin-right: 0px;
   margin-left: 10px;
 }
@@ -93,7 +92,6 @@ body {
 .digit-7 {
   right: 760px;
 }
-
 
 .tile {
   width: 100px;
