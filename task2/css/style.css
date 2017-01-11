@@ -3,22 +3,51 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #1e1f23;
+  background: #1E1F23;
 }
 
 .wrapper {
   perspective: 1300px;
-  /*margin-left: 700px;*/
-  width: 650px;
+  width: 860px;
   height: 240px;
   position: relative;
+}
+
+.labels{
+
+  position: absolute;
+  top: 220px;
+  display: flex;
+  z-index: 5;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.labels div{
+  flex-grow: 1;
+  border: 1px black solid;
+  width: 200px;
+  margin: 0 10px 0 10px;
+  background: white;
+}
+
+.labels div:first-child{
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+.labels div:last-child{
+  margin-right: 0px;
+  margin-left: 10px;
 }
 
 .digit {
   position: absolute;
   width: 100px;
   height: 200px;
-  border: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .low-second,
@@ -34,33 +63,37 @@ body {
 }
 
 .digit-0 {
-  left: 550px;
+  right: 0px;
 }
 
 .digit-1 {
-  left: 450px;
+  right: 100px;
 }
 
 .digit-2 {
-  left: 330px;
+  right: 220px;
 }
 
 .digit-3 {
-  left: 230px;
+  right: 320px;
 }
 
-
-/*.digit:nth-child(4){
-  left: 220px;
+.digit-4 {
+  right: 440px;
 }
 
-.digit:nth-child(5){
-  left: 110px;
+.digit-5 {
+  right: 540px;
 }
 
-.digit:nth-child(6){
-  left: 0px;
-}*/
+.digit-6 {
+  right: 660px;
+}
+
+.digit-7 {
+  right: 760px;
+}
+
 
 .tile {
   width: 100px;
@@ -164,12 +197,10 @@ h1 {
 
 .one {
   /* top: 50px; */
-  /*// text-overflow: clip;*/
-  /*// top: -50px;*/
+  /* top: -50px;*/
 }
 
 .two {
-  /*// line-height: -250px;*/
   top: -100px;
 }
 
