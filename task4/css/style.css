@@ -8,7 +8,7 @@ body{
 
 .wrapper {
   width: 80%;
-  height: 80%;
+  min-height: 80%;
   padding: 20px;
   border-radius: 50px;
   background: #FFD393;
